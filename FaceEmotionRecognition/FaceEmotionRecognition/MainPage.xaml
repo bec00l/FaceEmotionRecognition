@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:FaceEmotionRecognition"
              x:Class="FaceEmotionRecognition.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+	<StackLayout Orientation="Vertical">
+        <Button x:Name="TakePictureButton" Clicked="TakePictureButton_OnClicked" Text="Camera"></Button>
+        <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_OnClickedPictureButton_OnClicked" Text="Upload"></Button>
+    </StackLayout>
 
 </ContentPage>
