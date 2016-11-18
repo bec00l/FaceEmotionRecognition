@@ -7,6 +7,40 @@
 	<StackLayout Orientation="Vertical">
         <Button x:Name="TakePictureButton" Clicked="TakePictureButton_OnClicked" Text="Camera"></Button>
         <Button x:Name="UploadPictureButton" Clicked="UploadPictureButton_OnClickedPictureButton_OnClicked" Text="Upload"></Button>
+
+        <ActivityIndicator x:Name="Indicator1" IsVisible="False" IsRunning="False"/>
+        <Image x:Name="Image1" HeightRequest="240"/>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Gender: "></Label>
+            <Label x:Name="GenderLabel" Text="{Binding Path=Gender}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Age: "></Label>
+            <Label x:Name="AgeLabel" Text="{Binding Path=Age}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Emotion: "></Label>
+            <Label x:Name="EmotionLabel" Text="{Binding Path=Emotion}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Smile: "></Label>
+            <Label x:Name="SmileLabel" Text="{Binding Path=Smile}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Glasses: "></Label>
+            <Label x:Name="GlassesLabel" Text="{Binding Path=Glasses}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Beard: "></Label>
+            <Label x:Name="BeardLabel" Text="{Binding Path=Beard}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="3">
+            <Label Text="Moustache: "></Label>
+            <Label x:Name="MoustacheLabel" Text="{Binding Path=Moustache}"></Label>
+        </StackLayout>
     </StackLayout>
+    
+    
+  
 
 </ContentPage>
